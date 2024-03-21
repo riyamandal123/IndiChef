@@ -40,7 +40,7 @@ def input_image_details(uploaded_file):
 st.set_page_config(page_title="IndiChef - Automated Recipe Generator")
 st.header("IndiChef - Automated Recipe Generator")
 
-#dish_name = st.text_input("Name of the Dish:", key="dish_name")
+dish_name = st.text_input("Name of the Dish:", key="dish_name")
 input_text = st.text_input("Input Prompt:", key="input")
 uploaded_file = st.file_uploader("Choose an image of the invoice...", type=["jpg", "jpeg", "png"])
 image_data = None
