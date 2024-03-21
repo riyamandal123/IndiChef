@@ -1,32 +1,32 @@
-**IndiChef - Automated Recipe Generator👩‍🍳🍴**
+**👩‍🍳🍴IndiChef - Automated Recipe Generator👩‍🍳🍴**
 IndiChef is a web application designed to assist users in generating Indian cuisine recipes automatically. This tool leverages the power of AI, specifically Google's generative AI models, to provide users with recipe suggestions based on their input prompts.
 
 **Key Features**
-***Recipe Generation***
+***📝Recipe Generation:***
 Input details such as dish name, ingredients, and instructions in a structured format.
 Utilize Google's generative AI models to generate detailed recipes based on the provided input.
 
-***Flexible Input***
+***🔄Flexible Input:***
 Input various details about the dish, including ingredients and instructions, in a user-friendly interface.
 Simply fill out text input fields with the relevant information.
 
-***Customization***
+***🛠️Customization:***
 Customize the recipe generation process by providing specific details about the dish.
 Tailor recipe suggestions based on individual preferences and requirements.
 
-***Visual Feedback***
+***🖼️ Visual Feedback***
 Upload an image of the dish to provide additional context and inspiration for recipe generation.
 
-***Streamlit Integration***
+***🔗Streamlit Integration***
 Built using Streamlit, a popular Python library for building interactive web applications.
 Provides an intuitive and easy-to-use interface for users to interact with the recipe generator.
 
 **How to Use**
-***Input Details***
+***Input Details:***
 Enter the dish name, ingredients, and instructions in the provided text input fields.
-***Upload Image***
+***Upload Image:***
 Optionally, upload an image of the dish for visual feedback.
-***Generate Recipe***
+***Generate Recipe:***
 Click the "Generate Recipe" button to receive personalized recipe suggestions instantly.
 
 **About**
