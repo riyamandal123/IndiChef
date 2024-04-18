@@ -32,4 +32,3 @@ Click the "Generate Recipe" button to receive personalized recipe suggestions in
 **About**
 IndiChef - Automated Recipe Generator simplifies the process of generating Indian cuisine recipes by leveraging AI technology. It provides quick and convenient access to a wide range of recipe suggestions tailored to users' preferences. Whether you're looking for traditional favorites or innovative new dishes, IndiChef is designed to cater to your culinary needs.
 
-Feel free to customize and expand upon this template to suit your project's needs. This README structure provides a clear overview of your application's purpose, features, and usage instructions.
