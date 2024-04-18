@@ -5,6 +5,7 @@ import streamlit as st
 import os
 from PIL import Image
 import google.generativeai as genai
+import speech_recognition as sr
 
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 genai.configure(api_key=os.environ["API_KEY"])
@@ -25,6 +26,23 @@ def generate_recipes(input_text):
     recipes = response.text.split("\n")
     return recipes
 
+def get_voice_input():
+    recognizer = sr.Recognizer()
+    with sr.Microphone() as source:
+        st.write("Listening... Click the button again to stop.")
+        recognizer.adjust_for_ambient_noise(source)
+        audio = recognizer.listen(source)
+    try:
+        st.write("Recognizing...")
+        text = recognizer.recognize_google(audio)
+        return text
+    except sr.UnknownValueError:
+        st.error("Sorry, I could not understand your speech.")
+        return ""
+    except sr.RequestError as e:
+        st.error(f"Could not request results from Google Speech Recognition service; {e}")
+        return ""
+
 def input_image_details(uploaded_file):
     if uploaded_file is not None:
         # read the file into bytes
@@ -41,6 +59,15 @@ def input_image_details(uploaded_file):
 
 st.set_page_config(page_title="IndiChef - Automated Recipe Generator")
 st.header("IndiChef - Automated Recipe Generator")
+
+if st.button("Start Recording"):
+    input_text = get_voice_input()
+    st.write("You said:", input_text)
+    if input_text:
+        st.subheader("Generated Recipes:")
+        recipes = generate_recipes(input_text)
+        for recipe in recipes:
+            st.write(recipe)
 
 dish_name = st.text_input("Name of the Dish:", key="dish_name")
 input_text = st.text_input("Input Prompt:", key="input")
