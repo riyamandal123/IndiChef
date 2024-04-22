@@ -60,6 +60,57 @@ def input_image_details(uploaded_file):
 st.set_page_config(page_title="IndiChef - Automated Recipe Generator")
 st.header("IndiChef - Automated Recipe Generator")
 
+
+# Apply custom CSS for background image
+st.markdown(
+    """
+    <style>
+    .st-emotion-cache-1r4qj8v {
+        background-image: url('https://c8.alamy.com/comp/2JDWXK5/food-cooking-background-on-white-table-2JDWXK5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        font-family: Arial, sans-serif;
+    }
+    .st-emotion-cache-gh2jqd{
+    width: 84%;
+    margin-left: 32%;
+    padding: 6rem 1rem 10rem;
+    max-width: 46rem;
+    }
+    .header {
+        color: #008080;
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .subheader {
+        color: #696969;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .button {
+        background-color: #008080;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .error-message {
+        color: red;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 if st.button("Start Recording"):
     input_text = get_voice_input()
     st.write("You said:", input_text)
@@ -121,3 +172,4 @@ if input_text:
     recipes = generate_recipes(input_text)
     for recipe in recipes:
         st.write(recipe)
+
