@@ -24,16 +24,19 @@ Provides an intuitive and easy-to-use interface for users to interact with the r
 **How to Use**
 ***Input Details:***
 Enter the dish name, ingredients, and instructions in the provided text input fields.
-***Upload Image 📤***
-Optionally, upload an image of the dish for visual feedback.
-***Generate Recipe 📜***
-Click the "Generate Recipe" button to receive personalized recipe suggestions instantly.
-
-***Voice Translator 🎤***
-IndiChef also includes a voice input feature powered by Google Speech Recognition. Simply click the "Start Recording" button and speak your input prompt. The application will transcribe your speech into text, allowing you to generate recipes with ease.
 
 **About**
 IndiChef - Automated Recipe Generator simplifies the process of generating Indian cuisine recipes by leveraging AI technology. It provides quick and convenient access to a wide range of recipe suggestions tailored to users' preferences. Whether you're looking for traditional favorites or innovative new dishes, IndiChef is designed to cater to your culinary needs.
 
 **Output**
 ![](images/recipe-img1.jpeg)
+***Voice Translator 🎤***
+IndiChef also includes a voice input feature powered by Google Speech Recognition. Simply click the "Start Recording" button and speak your input prompt. The application will transcribe your speech into text, allowing you to generate recipes with ease.
+![](images/recipe-img2.jpeg)
+![](images/recipe-img3.jpeg)
+***Upload Image 📤***
+Optionally, upload an image of the dish for visual feedback.
+***Generate Recipe 📜***
+Click the "Generate Recipe" button to receive personalized recipe suggestions instantly.
+![](images/recipe-img4.jpeg)
+![](images/recipe-img5.jpeg)
