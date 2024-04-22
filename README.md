@@ -8,7 +8,7 @@ Utilize Google's generative AI models to generate detailed recipes based on the 
 
 ***🔄Flexible Input:***
 Input various details about the dish, including ingredients and instructions, in a user-friendly interface.
-Simply fill out text input fields with the relevant information.
+Simply fill out text input fields with the relevant information. 
 
 ***🛠️Customization:***
 Customize the recipe generation process by providing specific details about the dish.
