@@ -35,3 +35,5 @@ IndiChef also includes a voice input feature powered by Google Speech Recognitio
 **About**
 IndiChef - Automated Recipe Generator simplifies the process of generating Indian cuisine recipes by leveraging AI technology. It provides quick and convenient access to a wide range of recipe suggestions tailored to users' preferences. Whether you're looking for traditional favorites or innovative new dishes, IndiChef is designed to cater to your culinary needs.
 
+**Output**
+![](images/recipe-img1.jpeg)
